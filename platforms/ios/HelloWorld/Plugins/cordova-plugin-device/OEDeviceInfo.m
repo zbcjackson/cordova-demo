@@ -11,7 +11,35 @@
 #import "DeviceLoader.h"
 #import "OEDeviceInfo.h"
 
-@implementation UIDevice (ModelVersion)
+@interface OEDeviceInfo () {}
+@property(nonatomic,strong)DeviceLoader *loader;
+@end
+
+@implementation OEDeviceInfo
+
+- (id)init:(DeviceLoader*)loader
+{
+    self = [super init];
+    if (self){
+        _loader = loader;
+    }
+    return self;
+}
+
+- (NSDictionary *)properties
+{
+    UIDevice* device = [_loader load];
+
+    return @{
+             @"manufacturer": @"Apple",
+             @"model": [self modelVersion],
+             @"platform": @"iOS",
+             @"version": [device systemVersion],
+             @"uuid": [self uniqueAppInstanceIdentifier:device],
+             @"cordova": [[self class] cordovaVersion],
+             @"isVirtual": @([self isVirtual])
+             };
+}
 
 - (NSString*)modelVersion
 {
@@ -24,29 +52,6 @@
     free(machine);
     
     return platform;
-}
-
-@end
-
-@interface OEDeviceInfo () {}
-@property(nonatomic,strong)DeviceLoader *loader;
-@end
-
-@implementation OEDeviceInfo
-
-- (NSDictionary *)properties
-{
-    UIDevice* device = [_loader load];
-
-    return @{
-             @"manufacturer": @"Apple",
-             @"model": [device modelVersion],
-             @"platform": @"iOS",
-             @"version": [device systemVersion],
-             @"uuid": [self uniqueAppInstanceIdentifier:device],
-             @"cordova": [[self class] cordovaVersion],
-             @"isVirtual": @([self isVirtual])
-             };
 }
 
 - (NSString*)uniqueAppInstanceIdentifier:(UIDevice*)device

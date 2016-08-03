@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DeviceLoader.h"
 
 @interface OEDeviceInfo : NSObject
 
+- (id)init:(DeviceLoader*)loader;
 - (NSDictionary *)properties;
 
 @end

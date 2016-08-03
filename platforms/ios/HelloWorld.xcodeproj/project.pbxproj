@@ -11,7 +11,7 @@
 		053A607BA9E84AD98DFDBDB4 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2FEE95E174F46B05CDC5F /* CDVDevice.m */; };
 		0C3586611D3F8C3500D64E42 /* DeviceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3586601D3F8C3500D64E42 /* DeviceLoader.m */; };
 		0C3586641D3F95EB00D64E42 /* OEDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3586631D3F95EB00D64E42 /* OEDeviceInfo.m */; };
-		0C4C5AEB1D32539D00E2D0FB /* CDVDeviceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4C5AEA1D32539D00E2D0FB /* CDVDeviceTest.m */; };
+		0C4C5AEB1D32539D00E2D0FB /* OEDeviceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4C5AEA1D32539D00E2D0FB /* OEDeviceTest.m */; };
 		0CDC4A361D361A1F00F0B89A /* CDVDeviceInfoProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC4A351D361A1F00F0B89A /* CDVDeviceInfoProvider.m */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -55,7 +55,7 @@
 		0C3586631D3F95EB00D64E42 /* OEDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OEDeviceInfo.m; path = "cordova-plugin-device/OEDeviceInfo.m"; sourceTree = "<group>"; };
 		0C4C5ADE1D32534000E2D0FB /* HelloWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C4C5AE21D32534000E2D0FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C4C5AEA1D32539D00E2D0FB /* CDVDeviceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDVDeviceTest.m; sourceTree = "<group>"; };
+		0C4C5AEA1D32539D00E2D0FB /* OEDeviceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OEDeviceTest.m; sourceTree = "<group>"; };
 		0CDC4A341D361A1F00F0B89A /* CDVDeviceInfoProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVDeviceInfoProvider.h; path = "cordova-plugin-device/CDVDeviceInfoProvider.h"; sourceTree = "<group>"; };
 		0CDC4A351D361A1F00F0B89A /* CDVDeviceInfoProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVDeviceInfoProvider.m; path = "cordova-plugin-device/CDVDeviceInfoProvider.m"; sourceTree = "<group>"; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 		0C4C5ADF1D32534000E2D0FB /* HelloWorldTests */ = {
 			isa = PBXGroup;
 			children = (
-				0C4C5AEA1D32539D00E2D0FB /* CDVDeviceTest.m */,
+				0C4C5AEA1D32539D00E2D0FB /* OEDeviceTest.m */,
 				0C4C5AE21D32534000E2D0FB /* Info.plist */,
 			);
 			path = HelloWorldTests;
@@ -462,7 +462,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C4C5AEB1D32539D00E2D0FB /* CDVDeviceTest.m in Sources */,
+				0C4C5AEB1D32539D00E2D0FB /* OEDeviceTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
