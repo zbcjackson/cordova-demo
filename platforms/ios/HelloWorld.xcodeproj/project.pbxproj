@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
 		053A607BA9E84AD98DFDBDB4 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2FEE95E174F46B05CDC5F /* CDVDevice.m */; };
+		0C0324B51D57694C00A62619 /* OEDeviceProviderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0324B41D57694C00A62619 /* OEDeviceProviderTest.m */; };
 		0C3586611D3F8C3500D64E42 /* OEUIDeviceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3586601D3F8C3500D64E42 /* OEUIDeviceLoader.m */; };
 		0C3586641D3F95EB00D64E42 /* OEDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3586631D3F95EB00D64E42 /* OEDevice.m */; };
 		0C4C5AEB1D32539D00E2D0FB /* OEDeviceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4C5AEA1D32539D00E2D0FB /* OEDeviceTest.m */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = HelloWorld/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		04886FDD8668488ABDF49354 /* CDVDevice.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVDevice.h; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; };
+		0C0324B41D57694C00A62619 /* OEDeviceProviderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OEDeviceProviderTest.m; sourceTree = "<group>"; };
 		0C35865F1D3F8C3500D64E42 /* OEUIDeviceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OEUIDeviceLoader.h; path = "cordova-plugin-device/OEUIDeviceLoader.h"; sourceTree = "<group>"; };
 		0C3586601D3F8C3500D64E42 /* OEUIDeviceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OEUIDeviceLoader.m; path = "cordova-plugin-device/OEUIDeviceLoader.m"; sourceTree = "<group>"; };
 		0C3586621D3F95EB00D64E42 /* OEDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OEDevice.h; path = "cordova-plugin-device/OEDevice.h"; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			children = (
 				0C4C5AEA1D32539D00E2D0FB /* OEDeviceTest.m */,
 				0C4C5AE21D32534000E2D0FB /* Info.plist */,
+				0C0324B41D57694C00A62619 /* OEDeviceProviderTest.m */,
 			);
 			path = HelloWorldTests;
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C0324B51D57694C00A62619 /* OEDeviceProviderTest.m in Sources */,
 				0C4C5AEB1D32539D00E2D0FB /* OEDeviceTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
