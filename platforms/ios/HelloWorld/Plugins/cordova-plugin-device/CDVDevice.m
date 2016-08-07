@@ -23,17 +23,17 @@
 
 #import <Cordova/CDV.h>
 #import "CDVDevice.h"
-#import "CDVDeviceInfoProvider.h"
+#import "OEDeviceProvider.h"
 
 @interface CDVDevice () {}
-@property(nonatomic,strong)CDVDeviceInfoProvider *provider;
+@property(nonatomic,strong)OEDeviceProvider *provider;
 @end
 
 @implementation CDVDevice
 
 - (void)pluginInitialize
 {
-    _provider = [[CDVDeviceInfoProvider alloc] init:self];
+    _provider = [[OEDeviceProvider alloc] init:self];
 }
 
 - (void)getDeviceInfo:(CDVInvokedUrlCommand*)command

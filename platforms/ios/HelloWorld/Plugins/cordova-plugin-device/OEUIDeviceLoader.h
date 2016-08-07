@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DeviceLoader : NSObject
+@interface OEUIDeviceLoader : NSObject
 
 - (UIDevice*)load;
 

@@ -9,9 +9,9 @@
 #import <XCTest/XCTest.h>
 #import <OCHamcrest/OCHamcrest.h>
 #import <OCMockito/OCMockito.h>
-#import "CDVDeviceInfoProvider.h"
+#import "OEDeviceProvider.h"
 #import "CDVDevice.h"
-#import "DeviceLoader.h"
+#import "OEUIDeviceLoader.h"
 #import "OEDevice.h"
 @import Foundation;
 
@@ -34,7 +34,7 @@
 - (void)testExample {
     UIDevice *uiDevice = mock([UIDevice class]);
     [given([uiDevice systemVersion]) willReturn:@"9.3"];
-    DeviceLoader *loader = mock([DeviceLoader class]);
+    OEUIDeviceLoader *loader = mock([OEUIDeviceLoader class]);
     [given([loader load]) willReturn:uiDevice];
     OEDevice *device = [[OEDevice alloc] init:loader];
     
@@ -63,7 +63,7 @@
 - (void)testModelAndSystemVersion {
     UIDevice *uiDevice = mock([UIDevice class]);
     [given([uiDevice systemVersion]) willReturn:@"9.3"];
-    DeviceLoader *loader = mock([DeviceLoader class]);
+    OEUIDeviceLoader *loader = mock([OEUIDeviceLoader class]);
     [given([loader load]) willReturn:uiDevice];
     OEDevice *device = [[OEDevice alloc] init:loader];
     

@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
 		053A607BA9E84AD98DFDBDB4 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2FEE95E174F46B05CDC5F /* CDVDevice.m */; };
-		0C3586611D3F8C3500D64E42 /* DeviceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3586601D3F8C3500D64E42 /* DeviceLoader.m */; };
+		0C3586611D3F8C3500D64E42 /* OEUIDeviceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3586601D3F8C3500D64E42 /* OEUIDeviceLoader.m */; };
 		0C3586641D3F95EB00D64E42 /* OEDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3586631D3F95EB00D64E42 /* OEDevice.m */; };
 		0C4C5AEB1D32539D00E2D0FB /* OEDeviceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4C5AEA1D32539D00E2D0FB /* OEDeviceTest.m */; };
-		0CDC4A361D361A1F00F0B89A /* CDVDeviceInfoProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC4A351D361A1F00F0B89A /* CDVDeviceInfoProvider.m */; };
+		0CDC4A361D361A1F00F0B89A /* OEDeviceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC4A351D361A1F00F0B89A /* OEDeviceProvider.m */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		286E86FE1F6D6EECDF5D157D /* libPods-HelloWorldTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9681C98127AE6C06466ED25C /* libPods-HelloWorldTests.a */; };
@@ -49,15 +49,15 @@
 /* Begin PBXFileReference section */
 		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = HelloWorld/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		04886FDD8668488ABDF49354 /* CDVDevice.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVDevice.h; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; };
-		0C35865F1D3F8C3500D64E42 /* DeviceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviceLoader.h; path = "cordova-plugin-device/DeviceLoader.h"; sourceTree = "<group>"; };
-		0C3586601D3F8C3500D64E42 /* DeviceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeviceLoader.m; path = "cordova-plugin-device/DeviceLoader.m"; sourceTree = "<group>"; };
+		0C35865F1D3F8C3500D64E42 /* OEUIDeviceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OEUIDeviceLoader.h; path = "cordova-plugin-device/OEUIDeviceLoader.h"; sourceTree = "<group>"; };
+		0C3586601D3F8C3500D64E42 /* OEUIDeviceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OEUIDeviceLoader.m; path = "cordova-plugin-device/OEUIDeviceLoader.m"; sourceTree = "<group>"; };
 		0C3586621D3F95EB00D64E42 /* OEDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OEDevice.h; path = "cordova-plugin-device/OEDevice.h"; sourceTree = "<group>"; };
 		0C3586631D3F95EB00D64E42 /* OEDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OEDevice.m; path = "cordova-plugin-device/OEDevice.m"; sourceTree = "<group>"; };
 		0C4C5ADE1D32534000E2D0FB /* HelloWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C4C5AE21D32534000E2D0FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C4C5AEA1D32539D00E2D0FB /* OEDeviceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OEDeviceTest.m; sourceTree = "<group>"; };
-		0CDC4A341D361A1F00F0B89A /* CDVDeviceInfoProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVDeviceInfoProvider.h; path = "cordova-plugin-device/CDVDeviceInfoProvider.h"; sourceTree = "<group>"; };
-		0CDC4A351D361A1F00F0B89A /* CDVDeviceInfoProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVDeviceInfoProvider.m; path = "cordova-plugin-device/CDVDeviceInfoProvider.m"; sourceTree = "<group>"; };
+		0CDC4A341D361A1F00F0B89A /* OEDeviceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OEDeviceProvider.h; path = "cordova-plugin-device/OEDeviceProvider.h"; sourceTree = "<group>"; };
+		0CDC4A351D361A1F00F0B89A /* OEDeviceProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OEDeviceProvider.m; path = "cordova-plugin-device/OEDeviceProvider.m"; sourceTree = "<group>"; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -217,10 +217,10 @@
 			children = (
 				F9A2FEE95E174F46B05CDC5F /* CDVDevice.m */,
 				04886FDD8668488ABDF49354 /* CDVDevice.h */,
-				0CDC4A341D361A1F00F0B89A /* CDVDeviceInfoProvider.h */,
-				0CDC4A351D361A1F00F0B89A /* CDVDeviceInfoProvider.m */,
-				0C35865F1D3F8C3500D64E42 /* DeviceLoader.h */,
-				0C3586601D3F8C3500D64E42 /* DeviceLoader.m */,
+				0CDC4A341D361A1F00F0B89A /* OEDeviceProvider.h */,
+				0CDC4A351D361A1F00F0B89A /* OEDeviceProvider.m */,
+				0C35865F1D3F8C3500D64E42 /* OEUIDeviceLoader.h */,
+				0C3586601D3F8C3500D64E42 /* OEUIDeviceLoader.m */,
 				0C3586621D3F95EB00D64E42 /* OEDevice.h */,
 				0C3586631D3F95EB00D64E42 /* OEDevice.m */,
 			);
@@ -474,8 +474,8 @@
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				053A607BA9E84AD98DFDBDB4 /* CDVDevice.m in Sources */,
-				0C3586611D3F8C3500D64E42 /* DeviceLoader.m in Sources */,
-				0CDC4A361D361A1F00F0B89A /* CDVDeviceInfoProvider.m in Sources */,
+				0C3586611D3F8C3500D64E42 /* OEUIDeviceLoader.m in Sources */,
+				0CDC4A361D361A1F00F0B89A /* OEDeviceProvider.m in Sources */,
 				0C3586641D3F95EB00D64E42 /* OEDevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

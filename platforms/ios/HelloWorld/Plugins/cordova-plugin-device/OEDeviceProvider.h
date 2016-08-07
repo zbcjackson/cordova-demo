@@ -11,7 +11,7 @@
 #import "CDVDevice.h"
 #import "OEDevice.h"
 
-@interface CDVDeviceInfoProvider : NSObject
+@interface OEDeviceProvider : NSObject
 
 - (id)init:(CDVDevice*)plugin;
 - (id)initWithDevice:(CDVDevice*)plugin device:(OEDevice*)device;

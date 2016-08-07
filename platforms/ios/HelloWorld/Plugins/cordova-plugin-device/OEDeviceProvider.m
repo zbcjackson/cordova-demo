@@ -6,17 +6,17 @@
 //
 //
 
-#import "CDVDeviceInfoProvider.h"
+#import "OEDeviceProvider.h"
 #import "CDVDevice.h"
 #import "OEDevice.h"
 
 
-@interface CDVDeviceInfoProvider () {}
+@interface OEDeviceProvider () {}
 @property(nonatomic,strong)CDVDevice *plugin;
 @property(nonatomic,strong)OEDevice *device;
 @end
 
-@implementation CDVDeviceInfoProvider
+@implementation OEDeviceProvider
 
 - (id)init:(CDVDevice*)plugin
 {

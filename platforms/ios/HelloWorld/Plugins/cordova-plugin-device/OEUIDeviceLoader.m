@@ -6,9 +6,9 @@
 //
 //
 
-#import "DeviceLoader.h"
+#import "OEUIDeviceLoader.h"
 
-@implementation DeviceLoader
+@implementation OEUIDeviceLoader
 
 - (UIDevice*)load
 {

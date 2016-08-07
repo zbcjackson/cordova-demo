@@ -8,21 +8,21 @@
 
 #include <sys/sysctl.h>
 #import <Cordova/CDV.h>
-#import "DeviceLoader.h"
+#import "OEUIDeviceLoader.h"
 #import "OEDevice.h"
 
 @interface OEDevice () {}
-@property(nonatomic,strong)DeviceLoader *loader;
+@property(nonatomic,strong)OEUIDeviceLoader *loader;
 @end
 
 @implementation OEDevice
 
 - (id)init
 {
-    return [self init:[[DeviceLoader alloc] init]];
+    return [self init:[[OEUIDeviceLoader alloc] init]];
 }
 
-- (id)init:(DeviceLoader*)loader
+- (id)init:(OEUIDeviceLoader*)loader
 {
     self = [super init];
     if (self){
