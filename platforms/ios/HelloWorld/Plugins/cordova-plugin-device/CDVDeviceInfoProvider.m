@@ -8,22 +8,22 @@
 
 #import "CDVDeviceInfoProvider.h"
 #import "CDVDevice.h"
-#import "OEDeviceInfo.h"
+#import "OEDevice.h"
 
 
 @interface CDVDeviceInfoProvider () {}
 @property(nonatomic,strong)CDVDevice *plugin;
-@property(nonatomic,strong)OEDeviceInfo *device;
+@property(nonatomic,strong)OEDevice *device;
 @end
 
 @implementation CDVDeviceInfoProvider
 
 - (id)init:(CDVDevice*)plugin
 {
-    return [self initWithDevice:plugin device:[[OEDeviceInfo alloc] init]];
+    return [self initWithDevice:plugin device:[[OEDevice alloc] init]];
 }
 
-- (id)initWithDevice:(CDVDevice*)plugin device:(OEDeviceInfo*)device
+- (id)initWithDevice:(CDVDevice*)plugin device:(OEDevice*)device
 {
     self = [super init];
     if (self){

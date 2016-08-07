@@ -9,13 +9,18 @@
 #include <sys/sysctl.h>
 #import <Cordova/CDV.h>
 #import "DeviceLoader.h"
-#import "OEDeviceInfo.h"
+#import "OEDevice.h"
 
-@interface OEDeviceInfo () {}
+@interface OEDevice () {}
 @property(nonatomic,strong)DeviceLoader *loader;
 @end
 
-@implementation OEDeviceInfo
+@implementation OEDevice
+
+- (id)init
+{
+    return [self init:[[DeviceLoader alloc] init]];
+}
 
 - (id)init:(DeviceLoader*)loader
 {

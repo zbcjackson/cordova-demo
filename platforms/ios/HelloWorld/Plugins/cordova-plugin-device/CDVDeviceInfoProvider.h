@@ -9,12 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <Cordova/CDVPlugin.h>
 #import "CDVDevice.h"
-#import "OEDeviceInfo.h"
+#import "OEDevice.h"
 
 @interface CDVDeviceInfoProvider : NSObject
 
 - (id)init:(CDVDevice*)plugin;
-- (id)initWithDevice:(CDVDevice*)plugin device:(OEDeviceInfo*)device;
+- (id)initWithDevice:(CDVDevice*)plugin device:(OEDevice*)device;
 - (void)getDeviceInfo:(CDVInvokedUrlCommand*)command;
 
 @end

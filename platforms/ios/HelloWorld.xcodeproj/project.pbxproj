@@ -10,7 +10,7 @@
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
 		053A607BA9E84AD98DFDBDB4 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2FEE95E174F46B05CDC5F /* CDVDevice.m */; };
 		0C3586611D3F8C3500D64E42 /* DeviceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3586601D3F8C3500D64E42 /* DeviceLoader.m */; };
-		0C3586641D3F95EB00D64E42 /* OEDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3586631D3F95EB00D64E42 /* OEDeviceInfo.m */; };
+		0C3586641D3F95EB00D64E42 /* OEDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3586631D3F95EB00D64E42 /* OEDevice.m */; };
 		0C4C5AEB1D32539D00E2D0FB /* OEDeviceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4C5AEA1D32539D00E2D0FB /* OEDeviceTest.m */; };
 		0CDC4A361D361A1F00F0B89A /* CDVDeviceInfoProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC4A351D361A1F00F0B89A /* CDVDeviceInfoProvider.m */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
@@ -51,8 +51,8 @@
 		04886FDD8668488ABDF49354 /* CDVDevice.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVDevice.h; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; };
 		0C35865F1D3F8C3500D64E42 /* DeviceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviceLoader.h; path = "cordova-plugin-device/DeviceLoader.h"; sourceTree = "<group>"; };
 		0C3586601D3F8C3500D64E42 /* DeviceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeviceLoader.m; path = "cordova-plugin-device/DeviceLoader.m"; sourceTree = "<group>"; };
-		0C3586621D3F95EB00D64E42 /* OEDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OEDeviceInfo.h; path = "cordova-plugin-device/OEDeviceInfo.h"; sourceTree = "<group>"; };
-		0C3586631D3F95EB00D64E42 /* OEDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OEDeviceInfo.m; path = "cordova-plugin-device/OEDeviceInfo.m"; sourceTree = "<group>"; };
+		0C3586621D3F95EB00D64E42 /* OEDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OEDevice.h; path = "cordova-plugin-device/OEDevice.h"; sourceTree = "<group>"; };
+		0C3586631D3F95EB00D64E42 /* OEDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OEDevice.m; path = "cordova-plugin-device/OEDevice.m"; sourceTree = "<group>"; };
 		0C4C5ADE1D32534000E2D0FB /* HelloWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C4C5AE21D32534000E2D0FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C4C5AEA1D32539D00E2D0FB /* OEDeviceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OEDeviceTest.m; sourceTree = "<group>"; };
@@ -221,8 +221,8 @@
 				0CDC4A351D361A1F00F0B89A /* CDVDeviceInfoProvider.m */,
 				0C35865F1D3F8C3500D64E42 /* DeviceLoader.h */,
 				0C3586601D3F8C3500D64E42 /* DeviceLoader.m */,
-				0C3586621D3F95EB00D64E42 /* OEDeviceInfo.h */,
-				0C3586631D3F95EB00D64E42 /* OEDeviceInfo.m */,
+				0C3586621D3F95EB00D64E42 /* OEDevice.h */,
+				0C3586631D3F95EB00D64E42 /* OEDevice.m */,
 			);
 			name = Plugins;
 			path = HelloWorld/Plugins;
@@ -476,7 +476,7 @@
 				053A607BA9E84AD98DFDBDB4 /* CDVDevice.m in Sources */,
 				0C3586611D3F8C3500D64E42 /* DeviceLoader.m in Sources */,
 				0CDC4A361D361A1F00F0B89A /* CDVDeviceInfoProvider.m in Sources */,
-				0C3586641D3F95EB00D64E42 /* OEDeviceInfo.m in Sources */,
+				0C3586641D3F95EB00D64E42 /* OEDevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

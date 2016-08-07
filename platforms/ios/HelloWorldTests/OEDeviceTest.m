@@ -12,7 +12,7 @@
 #import "CDVDeviceInfoProvider.h"
 #import "CDVDevice.h"
 #import "DeviceLoader.h"
-#import "OEDeviceInfo.h"
+#import "OEDevice.h"
 @import Foundation;
 
 @interface OEDeviceTest : XCTestCase
@@ -36,7 +36,7 @@
     [given([uiDevice systemVersion]) willReturn:@"9.3"];
     DeviceLoader *loader = mock([DeviceLoader class]);
     [given([loader load]) willReturn:uiDevice];
-    OEDeviceInfo *device = [[OEDeviceInfo alloc] init:loader];
+    OEDevice *device = [[OEDevice alloc] init:loader];
     
     NSDictionary *properties = [device properties];
     
@@ -55,6 +55,7 @@
     assertThat(properties, hasEntry(equalTo(@"manufacturer"), equalTo(@"Apple")));
     assertThat(properties, hasEntry(equalTo(@"platform"), equalTo(@"iOS")));
     assertThat(properties, hasEntry(equalTo(@"cordova"), equalTo(@"4.1.1")));
+    assertThat(properties, hasEntry(equalTo(@"isVirtual"), equalTo(@true)));
     
 //    assertThat(argumentsJson, equalTo(@"{\"manufacturer\":\"Apple\",\"platform\":\"iOS\",\"model\":\"x86_64\",\"uuid\":\"F6A167B2-01FB-4319-AC48-B6522EAF0AD4\",\"cordova\":\"4.1.1\",\"version\":\"9.3\",\"isVirtual\":true}"));
 }
@@ -64,10 +65,10 @@
     [given([uiDevice systemVersion]) willReturn:@"9.3"];
     DeviceLoader *loader = mock([DeviceLoader class]);
     [given([loader load]) willReturn:uiDevice];
-    OEDeviceInfo *device = [[OEDeviceInfo alloc] init:loader];
+    OEDevice *device = [[OEDevice alloc] init:loader];
     
     NSDictionary *properties = [device properties];
-//    assertThat(properties, hasEntry(equalTo(@"model"), equalTo(@"Apple")));
+    assertThat(properties, hasEntry(equalTo(@"model"), equalTo(@"x86_64")));
     assertThat(properties, hasEntry(equalTo(@"version"), equalTo(@"9.3")));
 }
 
